@@ -1,58 +1,59 @@
 /* Allgemeines Styling */
-body {
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-    color: #333;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 90%;
-    max-width: 1400px;
+body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
+    font-family: Arial, sans-serif;   /*Schrifftart*/
+    box-sizing: border-box;             
+    color: #333;                    /*Schriftfarbe*/
+    margin-left: auto;                /*Abstand Links bis zum Rand wird automatisch angepasst*/
+    margin-right: auto;               /*Abstand Rechts bis zum Rand wird automatisch angepasst*/
+    margin-top: 10px;                 /*Abstand Oben bis zum Rand sind 10 Pixel*/
+    width: 90%;                       /*Der Body nimmt 90% der Bildschirmbreite an*/
+    max-width: 1400px;                /*Der Body ist Maximal 1400px breit*/
     
 } 
+
 /* Header */
-.header {
-    background-color: #003366;
-    color: white;
-    padding: 20px 40px;
-    max-height: 124px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+.header {       /*Angaben zum Styling der Kopfzeile*/
+    background-color: #003366;  /*Angabe der Hintergrundfarbe*/
+    color: white;               /*Schrifftfarbe*/
+    padding: 20px 40px;           /*20 Pixel Abstand oben und unten, 40 Pixel Abstand links und rechts*/
+    max-height: 124px;            /*Die Kopfzeile ist Maximal 124 Pixel Hoch*/
+    border-top-left-radius: 10px;       /*Die Linke obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
+    border-top-right-radius: 10px;      /*Die Rechte obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Der Schatten außenrum wird wieder gegeben */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
 }
 
-.header-content {
-    display: flex;
+.header-content {       /*alle folgenden Angaben sorgen dasfür das der Text im Header mittig dargestellt wird*/
+    display: flex;                  
     justify-content: center;
     position: relative;
     align-items: center;
 }
 
-.header-title{
-    margin: auto;
-    text-align: center;
-    z-index: 1;
+.header-title{          
+    margin: auto;       /*abstand wird automatisch angepasst*/
+    text-align: center;     /*Der text wird zentrall angezeigt*/
+    z-index: 1;             /*Sorgt dafür das Der Text nicht vom Bild beinfluss wird*/
 }
 
 .header-title h1 {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 1.8rem;      /*Gibt die Größe der Schrifftart für die Überschrifft an*/
 }
 
 .header-title p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1rem;        /*Gibt die Größe der Schrifftart für den Text an*/
 }
 
 .logo img {
-    position: absolute;
-    height: 70px;
-    width: auto;   
-    right: 10px; 
-    text-align: right;
-    top: 50%;
-    transform: translateY(-50%);
+    position: absolute;     /*Definition der Position des Bildes, das bild verschiebt sich nicht*/
+    height: 70px;           /*Das Bild ist 70 Pixel Hoch*/
+    width: auto;            /*Die breite des Bildes passt sich automatisch an*/
+    right: 10px;            /*Das Bild hat einen Abstand von 10 Pixel zum Rechten Rand*/
+    text-align: right;      /*Das Bild wird rechts positioniert*/
+    top: 50%;               /*wird benötigt damit das Bild nicht den Text beim Zentrieren beeinschränkt*/
+    transform: translateY(-50%);        /*wird benötigt damit das Bild nicht den Text beim Zentrieren beeinschränkt*/
 }
 
 /* Navigation */
