@@ -52,7 +52,7 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     width: auto;            /*Die breite des Bildes passt sich automatisch an*/
     right: 10px;            /*Das Bild hat einen Abstand von 10 Pixel zum Rechten Rand*/
     text-align: right;      /*Das Bild wird rechts positioniert*/
-    top: 50%;               /*wird benötigt damit das Bild nicht den Text beim Zentrieren beeinschränkt*/
+    top: 50%;                           /*wird benötigt damit das Bild nicht den Text beim Zentrieren beeinschränkt*/
     transform: translateY(-50%);        /*wird benötigt damit das Bild nicht den Text beim Zentrieren beeinschränkt*/
 }
 
