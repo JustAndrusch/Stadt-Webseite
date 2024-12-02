@@ -19,7 +19,8 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     max-height: 124px;            /*Die Kopfzeile ist Maximal 124 Pixel Hoch*/
     border-top-left-radius: 10px;       /*Die Linke obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
     border-top-right-radius: 10px;      /*Die Rechte obere Ecke des Headers hat eine Rundung mit dem Wert 10 Pixel*/
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Der Schatten außenrum wird wieder gegeben */
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.2), /* Oben links */
+                10px -10px 20px rgba(0, 0, 0, 0.2);  /* Oben rechts */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
 }
 
@@ -104,7 +105,8 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     background-color: white;
     gap: 20px;
     flex-wrap: wrap;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.2), /* Links */
+                10px 0 20px rgba(0, 0, 0, 0.2);  /* Rechts */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
 }
 
@@ -130,15 +132,10 @@ body {      /*Body gibt das Styling für den Kompletten rumpf der Webseite*/
     
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
 .header-container {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin: 0;
     background-color: white;
     font-size: 1.5rem;
@@ -162,6 +159,39 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+    margin: auto;
+}
+.image-meldung{
+   text-align: center;
+}
+
+.text-meldung{
+
+}
+
+.content-block-meldung {
+    background-color: white;
+    display: flex;
+    margin: 10px;
+}
+
+.content-container-meldung {
+    width: 25%;
+    background-color: white;
+    border: 1px solid #ced4da;
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+    overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
+    min-height: 100px;
+}
+
+.content-container-meldung h2{
+    margin: 0;
+    background-color: white;
+    font-size: 1rem;
+    color: #003366;
 }
 
 /* Footer */
@@ -172,7 +202,8 @@ img {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Schatten */
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.2), /* Unten links */
+                10px 10px 20px rgba(0, 0, 0, 0.2);  /* Unten rechts */
     overflow: visible; /* Stellt sicher, dass der Schatten nicht abgeschnitten wird */
 }
 
@@ -185,6 +216,13 @@ img {
     margin: 12px;
 }
 
+.line{   
+    width: 100%;
+    background-color: #003366;
+    height: 4px;
+    border-radius: 1px;
+    margin: 4px auto;
+}
 
 /* buttons */
 .button-link {
